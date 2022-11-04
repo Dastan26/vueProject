@@ -1,0 +1,55 @@
+@import "vars.scss";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: $roboto;
+  color: $blue;
+}
+
+h1 {
+  font-size: 48px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: 32;
+  line-height: 1.31;
+}
+
+a {
+  text-decoration: none;
+  transition: 0.3s linear;
+  color: $blue;
+}
+
+button {
+  display: block;
+  border: 0;
+  font-family: $roboto;
+  transition: 0.3s linear;
+  cursor: pointer;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  text-transform: uppercase;
+  background-color: $blue;
+  border-radius: 2px;
+}
+
+ul {
+  list-style: none;
+}
+
+.container {
+  max-width: 1236px;
+  margin: 0 auto;
+}
