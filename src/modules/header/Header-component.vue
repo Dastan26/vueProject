@@ -2,19 +2,23 @@
   <header class="header">
     <div class="container">
       <div class="header-wrapper">
-        <div class="header-logo">Logo</div>
+        <a href="#!" class="header-logo">Logo</a>
         <nav class="nav">
-          <div class="nav-menu">
+          <ul class="nav-menu">
             <li class="nav-menu__item">
-              <a href="" class="nav-menu__item-link">About</a>
+              <router-link to="/" class="nav-menu__item-link"
+                >About</router-link
+              >
             </li>
             <li class="nav-menu__item">
-              <a href="" class="nav-menu__item-link">News</a>
+              <router-link to="/" class="nav-menu__item-link">News</router-link>
             </li>
             <li class="nav-menu__item">
-              <a href="" class="nav-menu__item-link">Contacts</a>
+              <router-link to="/" class="nav-menu__item-link"
+                >Contacts</router-link
+              >
             </li>
-          </div>
+          </ul>
         </nav>
       </div>
     </div>
@@ -22,9 +26,13 @@
 </template>
 
 <script>
-export default {};
+export default {
+  data: function () {
+    return {};
+  },
+};
 </script>
 
-<style>
+<style lang="scss" scoped>
 @import "../../assets/scss/header.scss";
 </style>

@@ -1,0 +1,32 @@
+.main-3 {
+  img {
+    width: 100%;
+  }
+  .nature {
+    font-family: "Roboto";
+    font-weight: 700;
+    margin-top: 52px;
+    text-align: center;
+
+    h2 {
+      margin-bottom: 54px;
+    }
+    p {
+      margin: 0 auto 30px;
+      font-weight: 400;
+      max-width: 655px;
+      text-align: center;
+    }
+    .btn-block {
+      display: flex;
+      justify-content: center;
+      gap: 24px;
+      margin-bottom: 67px;
+
+      button {
+        color: #fff;
+        width: 384px;
+      }
+    }
+  }
+}

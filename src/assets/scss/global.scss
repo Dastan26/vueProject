@@ -21,8 +21,9 @@ h3,
 h4,
 h5,
 h6 {
-  font-size: 32;
+  font-size: 32px;
   line-height: 1.31;
+  letter-spacing: 0.5px;
 }
 
 a {
@@ -43,10 +44,18 @@ button {
   text-transform: uppercase;
   background-color: $blue;
   border-radius: 2px;
+  width: 180px;
+  padding: 17px 0 15px;
 }
 
 ul {
   list-style: none;
+}
+
+p {
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.5px;
 }
 
 .container {
