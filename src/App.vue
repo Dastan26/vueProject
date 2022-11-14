@@ -1,16 +1,15 @@
 <template>
   <div id="app">
     <header-component></header-component>
-    <main-page></main-page>
+    <router-view></router-view>
     <main-page2-component></main-page2-component>
   </div>
 </template>
 
 <script>
 import HeaderComponent from "./modules/header/Header-component.vue";
-import MainPage from "./modules/main/Main-page.vue";
 export default {
-  components: { HeaderComponent, MainPage },
+  components: { HeaderComponent },
   data: function () {
     return {};
   },
