@@ -5,8 +5,9 @@ Vue.use(VueRouter);
 
 import Main from "./modules/main/Main-page.vue";
 import About from "./modules/about/About-page.vue";
-import News from "./modules/news/News-page.vue";
-import Contacts from "./modules/contacts/Contacts-page.vue";
+import News from "@/modules/news/News-page.vue";
+import ContactsPage from "@/modules/contacts/Contacts-page";
+import AdminPage from "@/modules/admin/Adminn-page";
 
 export default new VueRouter({
   mode: "history",
@@ -29,7 +30,12 @@ export default new VueRouter({
     {
       name: "contacts",
       path: "/contacts",
-      component: Contacts,
+      component: ContactsPage,
+    },
+    {
+      name: "admin",
+      path: "/admin",
+      component: AdminPage,
     },
   ],
 });

@@ -20,6 +20,11 @@
                 >Contacts</router-link
               >
             </li>
+            <li class="nav-menu__item">
+              <router-link to="/admin" class="nav-menu__item-link"
+                >Admin</router-link
+              >
+            </li>
           </ul>
         </nav>
       </div>

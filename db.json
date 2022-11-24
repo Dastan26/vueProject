@@ -1,3 +1,16 @@
 {
-    "news": []
+  "news": [
+    {
+      "img": "https://media.cnn.com/api/v1/images/stellar/prod/221122115352-04-saudi-arabia-argentina-world-cup.jpg?c=16x9&q=h_720,w_1280,c_fill",
+      "title": "Saudi Arabia stuns Lionel Messi’s Argentina in one of the biggest upsets in World Cup history",
+      "description": "Lusail, Qatar\nCNN\n — \nSaudi Arabia produced one of the biggest upsets in World Cup history Tuesday, beating Lionel Messi’s Argentina 2-1 in an astonishing Group C match.\n\nMany had expected the South American team, ranked third in the world, unbeaten for three years and among the favorites to win the tournament, to sweep aside its opponent, ranked 48 places below it in the world rankings.",
+      "id": 1
+    },
+    {
+      "img": "https://media.cnn.com/api/v1/images/stellar/prod/221122115352-04-saudi-arabia-argentina-world-cup.jpg?c=16x9&q=h_720,w_1280,c_fill",
+      "title": "asd",
+      "description": "akjlhbdsljahbsldjba;sjd",
+      "id": 2
+    }
+  ]
 }

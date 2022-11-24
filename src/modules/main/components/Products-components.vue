@@ -12,32 +12,32 @@
         <h3>{{ product.price }}$</h3>
       </div>
     </div>
-    <button v-if="products.length === limitValue" @click="loadMoreProducts">
+    <button v-if="getProducts.length === limitValue" @click="loadMoreProducts">
       View more
     </button>
   </div>
 </template>
 
 <script>
+import { mapGetters } from "vuex";
+
 export default {
   data() {
     return {
-      products: [],
       limitValue: 6,
     };
   },
+
+  computed: mapGetters(["getProducts"]),
+
   created() {
-    fetch(`https://fakestoreapi.com/products?limit=${this.limitValue}`)
-      .then((res) => res.json())
-      .then((json) => (this.products = json));
+    this.$store.dispatch("allProducts", this.limitValue);
   },
   methods: {
     loadMoreProducts() {
       this.limitValue += 3;
 
-      fetch(`https://fakestoreapi.com/products?limit=${this.limitValue}`)
-        .then((res) => res.json())
-        .then((json) => (this.products = json));
+      this.$store.dispatch("allProducts", this.limitValue);
     },
   },
 };
